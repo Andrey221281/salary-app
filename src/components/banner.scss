@@ -1,0 +1,19 @@
+.banner {
+  position: absolute;
+  white-space: nowrap;
+  margin-left: 0.5rem;
+  font-weight: normal;
+  font-size: 0.875rem;
+
+  & div:not(:first-child) {
+    margin-top: 0.25rem;
+  }
+
+  & span {
+    font-weight: 600;
+    font-size: 1rem;
+    &::after {
+      @include withRuble();
+    }
+  }
+}
